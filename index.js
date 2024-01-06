@@ -11,8 +11,10 @@ const port = process.env.PORT || 3000;
 const username = process.env.MONGODB_USERNAME;
 const password = process.env.MONGODB_PASSWORD;
 
+
+// mongodb+srv://sonidivyansh665:<password>@cluster0.yaddgjf.mongodb.net/?retryWrites=true&w=majority
 mongoose.connect(
-  `mongodb+srv://${username}:${password}@cluster0.unrbmch.mongodb.net/registrationFormDB`,
+  `mongodb+srv://${username}:${password}@cluster0.yaddgjf.mongodb.net/?retryWrites=true&w=majority`,
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
